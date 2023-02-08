@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1 id="sampleHeading">Hello World</h1>
+        <br>
+        <button onclick="changeColor()">Change to Red</button>
+        <button onclick="this.style.backgroundColor='yellow'">Change my color</button>
+        <div style="background: yellow; width: 500px; height: 500px;">
+            <button onclick="this.parentNode.style.backgroundColor='red'">Change the color of the div!</button>
+        </div>
+        <button onclick="triggerModal()">Modal Trigger button</button>
+        <div class="modal-overlay" id="modal-sample">
+            <div class="modal">
+                Username: <input type="text">
+                <br><br>
+                Password: <input type="password">
+                <br><br>
+                <div style="text-align: center">
+                    <button>Submit Form</button>
+                    <button onclick="this.parentNode.parentNode.parentNode.style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+        <ul id="sampleList">
+            <li>Uno</li>
+            <li id="dos">Dos</li>
+            <li>Tres</li>
+        </ul>
+        <button onclick="createSampleElement()">Create Element inside Division Sample</button>
+        <button id="remove-button">Remove Element inside Division Sample</button>
+        <div id="divisionSample">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </div>
+        <hr><hr>
+        <h1>TO-DO LIST</h1>
+        <label for="Task:"></label>
+        <input type="text" id="task">
+        <button id="add-task">Add Task</button>
+        <button id="remove-task">Remove Task</button>
+        <ul id="listOfTask">
+
+        </ul>
+        <hr>
+        <hr>
+        <ul id="listSampleNew">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+        <hr>
+        <hr>
+        <button id="attribute-1">Click Me To Disable</button>
+        <button id="attribute-2" movie="Madagascar">Click Me To UnDisable my brother...</button>
+        <button id="button-3">Click me to add Class to the Div</button>
+        <button id="button-4">Click me to remove Class from the Div</button>
+        <div id="divNoClass">
+            Hello World
+        </div>
+        <hr>
+        <hr>
+        <button id="tab-1" class="button" disabled>Tab 1</button>
+        <button id="tab-2" class="button">Tab 2</button>
+        <button id="tab-3" class="button">Tab 3</button>
+        <hr>
+        <div id="containerDivision">
+            <div id="div-1" class="divi divi-1 active"><h1>Division 1</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia tenetur totam, ipsam ratione accusamus, in, deleniti sint obcaecati ipsa est quos dolorem? Molestias ipsa optio quae vel nam officia?</p></div>
+            <div id="div-2" class="divi divi-2"><h1>Division 2</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, impedit odio natus recusandae ducimus cum repudiandae debitis alias blanditiis. Modi laudantium illo rem consequuntur, error dicta qui nihil porro consectetur.</p></div>
+            <div id="div-3" class="divi divi-3"><h1>Division 3</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur architecto rem voluptas ea culpa, qui atque unde ipsam libero delectus tempora quae asperiores quam facere labore eveniet praesentium expedita dolore?</p></div>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
