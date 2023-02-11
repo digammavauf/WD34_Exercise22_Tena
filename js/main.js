@@ -166,3 +166,46 @@ document.querySelectorAll(".button").forEach(function(button){
 });
 
 //END SHORT VERSION
+
+let sampleArray = [0, 1, 2, 3, 4, 5];
+
+sampleArray.forEach(function(arrayItem){
+    console.log(arrayItem);
+});
+
+for (let arrayItem of sampleArray) {
+    console.log(arrayItem);
+}
+
+function showStudents(...names) {
+    for(let student of names) {
+        console.log(student);
+    }
+}
+
+showStudents("Tena", "Lapuz", "Castro");
+
+function getSum(...numbers) {
+    let sum = 0;
+    for(let number of numbers) {
+        sum += number;
+    }
+    console.log(sum);
+}
+
+getSum(1, 2, 3, 4, 5, 15, 30, 60, 120);
+
+let setA = ["a", "b", "c"];
+let setB = ["d", "e", "f"];
+let allSets = [...setA, ...setB];
+
+for(let student of allSets) {
+    console.log(student);
+}
+
+let who = "Tena";
+let templateLiteral = `this
+is a
+message
+from ${who}`;
+console.log(templateLiteral);
